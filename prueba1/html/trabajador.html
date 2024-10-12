@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajador</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</head>
+
+<body class="bg-light" onload="validarAcceso()">
+
+    <div class="container-fluid p-4">
+        <div class="row justify-content-center mb-4">
+            <div class="col-10 col-sm-10 col-md-11 col-lg-10 col-xl-10">
+                <div class="card p-4 shadow-lg text-center" style="border-radius: 15px;">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <h2 id="mensajeBienvenida" class="mb-3">¡Bienvenido!</h2>
+                        <h1 class="mb-4">Institución Universitaria de Barranquilla</h1>
+                        <img src="../img/abajo.png" id="Bretractil" class="img-fluid" height="30" width="30" onclick="retractil()" alt="Icono desplegable">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="row justify-content-center mb-4">
+            <div class="col-10 col-sm-10 col-md-11 col-lg-10 col-xl-10">
+                <div id="HD" class="card p-4 shadow-lg text-center" style="border-radius: 15px; display: none;">
+                    <div class="d-flex flex-column flex-sm-row justify-content-center mt-3">
+                        <button type="button" class="btn btn-primary mx-2 mb-3" onclick="window.location.href='aboutus.html'">¿Qué somos?</button>
+                        <button type="button" class="btn btn-success mx-2 mb-3" onclick="window.location.href='listadmins.html'">Nuestros Administradores</button>
+                        <button type="button" class="btn btn-secondary mx-2 mb-3" onclick="window.location.href='ubicacion.html'">¿Dónde estamos?</button>
+                        <button type="button" class="btn btn-warning mx-2 mb-3" onclick="window.location.href='trabajadorindex.html'">Menú Principal</button>
+                        <button type="button" class="btn btn-danger mx-2 mb-3" onclick="cerrarSesion()">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center mb-4">
+        <div class="col-10 col-sm-10 col-md-8 col-lg-8 col-xl-11">
+            <div class="card p-4 shadow">
+                <h2 class="text-center mb-4">Formulario de Trabajador</h2>
+                <form id="formularioTrabajador">
+                    <div class="mb-3">
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" id="correo" class="form-control" placeholder="Correo" aria-label="Correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="titulo" class="form-control" placeholder="Título" aria-label="Título" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="ubicacion" class="form-control" placeholder="Ubicación" aria-label="Ubicación" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" id="edad" class="form-control" placeholder="Edad" min="18" aria-label="Edad" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="telefono" class="form-control" placeholder="Número de Teléfono" aria-label="Número de Teléfono" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="genero">Género:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="genero" value="M" id="generoM" required>
+                            <label class="form-check-label" for="generoM">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="genero" value="F" id="generoF">
+                            <label class="form-check-label" for="generoF">Femenino</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="genero" value="Otros" id="generoOtros">
+                            <label class="form-check-label" for="generoOtros">Otros</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nivelEducativo">Nivel Educativo:</label>
+                        <select id="nivelEducativo" class="form-select" aria-label="Nivel Educativo" required>
+                            <option value="" disabled selected>Seleccionar</option>
+                            <option value="Tecnico">Técnico</option>
+                            <option value="Tecnologo">Tecnólogo</option>
+                            <option value="Profesional">Profesional</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white text-center py-3 mt-auto" style="background-color: rgba(108, 117, 125, 0.4);">
+        <p>Alvaro Muñoz | Jean Macias</p>
+    </footer>
+
+</body>
+</html>

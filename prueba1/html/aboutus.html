@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz profesional</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body onload="validarAcceso()">
+
+    <div class="container-fluid text-center"> 
+        <div class="row">
+            <div class="col-12">
+                <div class="card p-4">
+                    <h1>Institución Universitaria de Barranquilla</h1>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-warning mx-2" onclick="window.history.back();">Volver</button>
+                        <button type="button" class="btn btn-danger mx-2" onclick="cerrarSesion()">Cerrar Sesión</button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Visión</h5>
+                            <img src="../img/down.png" class="retractil" height="30px" width="30px" onclick="tarjetita(this)">
+                        </div>
+                        <div class="card-body">
+                            <p class="contenido" id="vision" style="display: none;">
+                                El proyecto "Prototipo Voz Profesional" busca desarrollar una plataforma web dirigida a profesionales con títulos académicos que deseen promover sus servicios y conocimientos de manera accesible y visible en su área local.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">                  
+                            <h5 class="card-title">Finalidad</h5>
+                            <img src="../img/down.png" class="retractil" height="30px" width="30px" onclick="tarjetita(this)">
+                        </div>
+                        <div class="card-body">
+                            <p class="contenido" id="funcion" style="display: none;">
+                                Permitir a los usuarios registrarse y crear un perfil público con información clave y un certificado que acredite su profesionalismo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">      
+                            <h5 class="card-title">Objetivo</h5>
+                            <img src="../img/down.png" class="retractil" height="30px" width="30px" onclick="tarjetita(this)">
+                        </div>
+                        <div class="card-body">
+                            <p class="contenido" id="obj" style="display: none;">
+                                El objetivo principal de este prototipo es fomentar la conexión entre la demanda local de servicios profesionales y la oferta existente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">      
+                            <h5 class="card-title">Virtualidad</h5>
+                            <img src="../img/down.png" class="retractil" height="30px" width="30px" onclick="tarjetita(this)">
+                        </div>
+                        <div class="card-body">
+                            <p class="contenido" id="virt" style="display: none;">
+                                Este proyecto se justifica debido a la creciente necesidad de plataformas que promuevan de forma activa a los profesionales locales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">      
+                            <h5 class="card-title">Otros</h5>
+                            <img src="../img/down.png" class="retractil" height="30px" width="30px" onclick="tarjetita(this)">
+                        </div>
+                        <div class="card-body">
+                            <p class="contenido" id="otros" style="display: none;">
+                                La implementación de esta página web no solo incrementará el reconocimiento y los ingresos de los profesionales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-center mb-5">Conoce todos tus privilegios</h1>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Rol</th>
+                                    <th>Acceso a Página</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Usuario</td>
+                                    <td><a href="aboutus.html">About Us</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Usuario</td>
+                                    <td><a href="usuario.html">Usuario</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Usuario</td>
+                                    <td><a href="usuarioindex.html">Usuario Index</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Usuario</td>
+                                    <td><a href="ubicacion.html">Ubicación</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table table-bordered">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Rol</th>
+                                    <th>Acceso a Página</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Trabajador</td>
+                                    <td><a href="aboutus.html">About Us</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Trabajador</td>
+                                    <td><a href="trabajador.html">Trabajador</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Trabajador</td>
+                                    <td><a href="trabajadorindex.html">Trabajador Index</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Trabajador</td>
+                                    <td><a href="usuario.html">Usuario</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Trabajador</td>
+                                    <td><a href="ubicacion.html">Ubicación</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table table-bordered">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Rol</th>
+                                    <th>Acceso a Página</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Administrador</td>
+                                    <td><a href="aboutus.html">About Us</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Administrador</td>
+                                    <td><a href="admin.html">Admin</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Administrador</td>
+                                    <td><a href="adminindex.html">Admin Index</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Administrador</td>
+                                    <td><a href="trabajador.html">Trabajador</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Administrador</td>
+                                    <td><a href="usuario.html">Usuario</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Administrador</td>
+                                    <td><a href="ubicacion.html">Ubicación</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white text-center py-3 mt-auto" style="background-color: rgba(108, 117, 125, 0.4);">
+        <p>Alvaro Muñoz | Jean Macias</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

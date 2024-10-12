@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body class="bg-light" onload="validarAcceso()">
+
+    <div class="container-fluid p-4">
+        <div class="row justify-content-center mb-4">
+            <div class="col-10 col-sm-10 col-md-11 col-lg-10 col-xl-10">
+                <div class="card p-4 shadow-lg text-center" style="border-radius: 15px;">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <h2 id="mensajeBienvenida" class="mb-3">¡Bienvenido!</h2>
+                        <h1 class="mb-4">Institución Universitaria de Barranquilla</h1>
+                        <img src="../img/abajo.png" id="Bretractil" height="30px" width="30px" onclick="retractil()" alt="Retráctil">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row justify-content-center mb-4">
+            <div class="col-10 col-sm-10 col-md-11 col-lg-10 col-xl-10">
+                <div id="HD" class="card p-4 shadow-lg text-center" style="border-radius: 15px;">
+                    <div class="d-flex flex-column flex-sm-row justify-content-center mt-3">
+                        <button type="button" class="btn btn-primary mx-2 mb-3" onclick="window.location.href='aboutus.html'">¿Qué somos?</button>
+                        <button type="button" class="btn btn-success mx-2 mb-3" onclick="window.location.href='usuariosadmin.html'">Usuarios activos</button>
+                        <button type="button" class="btn btn-secondary mx-2 mb-3" onclick="window.location.href='ubicacion.html'">¿Dónde estamos?</button>
+                        <button type="button" class="btn btn-warning mx-2 mb-3" onclick="window.location.href='adminindex.html'">Menú Principal</button>
+                        <button type="button" class="btn btn-danger mx-2 mb-3" onclick="cerrarSesion()">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <h2 class="text-center mb-4">Solicitudes de Trabajadores</h2>
+            <div id="contenedorTarjetas" class="d-flex flex-wrap justify-content-center gap-3"></div>
+        </div>
+    </div>
+            
+    <footer class="text-white text-center py-3 mt-auto" style="background-color: rgba(108, 117, 125, 0.4);">
+        <p>Alvaro Muñoz | Jean Macias</p>
+    </footer>
+        
+    <script src="../js/scripts.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
